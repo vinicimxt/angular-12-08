@@ -1,0 +1,52 @@
+<p>{{nome | uppercase}}</p>
+<p>{{nome | lowercase}}</p>
+<p>{{obj.nome}}</p>
+<p>{{obj.idade}}</p>
+<p>{{obj | json}}</p>
+
+
+<!--Matriz-->
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Nota1</th>
+            <th>Nota3</th>
+            <th>Média</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of alunos">
+            <td>{{a.nome}}</td>
+            <td>{{a.nota1}}</td>
+            <td>{{a.nota2}}</td>
+            <td>{{a | media}}</td>
+
+        </tr>
+    </tbody>
+    
+</table>
+
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Janeiro</th>
+            <th>Fevereiro</th>
+            <th>Março</th>
+            <th>Trimestre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of vendas">
+            <td>{{a.nome}}</td>
+            <td>{{a.janeiro}}</td>
+            <td>{{a.fevereiro}}</td>
+            <td>{{a.marco}}</td>
+            <td>{{a | media}}</td>
+
+        </tr>
+    </tbody>
+</table>
